@@ -32,13 +32,13 @@
     },
     "variables": {
         "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'sawinvm')]",
-        "nicName": "myVM03Nic",
-        "addressPrefix": "192.168.13.0/24",
-        "subnetName": "Production03",
-        "subnetPrefix": "192.168.13.0/24",
-        "publicIPAddressName": "VM03pip",
-        "vmName": "VM03",
-        "virtualNetworkName": "EUVNet03",
+        "nicName": "SSCheckNic",
+        "addressPrefix": "10.0.0.0/16",
+        "subnetName": "mySubnet",
+        "subnetPrefix": "10.0.0.0/24",
+        "publicIPAddressName": "SSCheckPip",
+        "vmName": "SSCheck",
+        "virtualNetworkName": "myVnet",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]"
     },
     "resources": [
