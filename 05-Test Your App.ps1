@@ -1,0 +1,1 @@
+﻿Get-AzureRmPublicIPAddress -ResourceGroupName AZScaleUS -Name myPublicIP | select IpAddress
