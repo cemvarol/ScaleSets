@@ -7,8 +7,8 @@ Set-AzureRmVmssStorageProfile $vmssConfig `
 
 # Set up information for authenticating with the virtual machine
 Set-AzureRmVmssOsProfile $vmssConfig `
-  -AdminUsername azureuser `
-  -AdminPassword P@ssword! `
+  -AdminUsername cem `
+  -AdminPassword 1q2w3e4r5t6y* `
   -ComputerNamePrefix myVM
 
 # Create the virtual network resources
